@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+</head>
+<body>
+<div class="container">
+<button class="accordion">1</button>
+<img src="../img/1.jpg" alt="" class="penal">
+<button class="accordion">2</button>
+<img src="../img/2.jpg" alt="" class="penal">
+<button class="accordion">3</button>
+<img src="../img/3.jpg" alt="" class="penal">
+</div>
+<style>
+
+    .accordion{
+        padding: 15px;
+        cursor: pointer;
+        transition: 0.4s;
+        background-color: burlywood;
+        display: flex;
+        flex-direction: column;
+        margin-left: 47%;
+        }
+        .penal {
+            display: none;
+            padding: 15px;
+            margin-left: 41.5%;
+        }
+        .show{
+            display: block;
+        }
+        .active{
+            font-weight: bold;
+           
+        }
+       
+</style>
+
+<script>
+var acc = document.getElementsByClassName('accordion');
+
+
+for (let i = 0; i < acc.length; i++) {
+acc[i].onclick = function () {
+
+
+  this.nextElementSibling.classList.toggle('show');
+}
+
+}
+</script> 
+
+
+</body>
+</html>
+

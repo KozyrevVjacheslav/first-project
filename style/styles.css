@@ -1,0 +1,41 @@
+.background{
+    background-color: rgba(189, 214, 253, 0.445);
+}
+.navbar {
+    padding: 30px;
+    margin-bottom: -13px;
+}
+.card {
+    max-height: 200px;
+    margin: 0, auto;
+    margin-bottom: 1rem;
+    transition-duration: 1s;
+}
+
+.title{
+    text-align: center;
+    margin-top: 1%;
+    padding: 0.5rem;
+}
+.row {
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+.col-sm:hover .card {
+    transform: scale(1.07);
+}
+
+.col-sm .card {
+    width: 100%;
+    transition-duration: 1s;
+}
+.name{
+    text-decoration: none;
+    color: black;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+a:hover { 
+    text-decoration: none !important; 
+}

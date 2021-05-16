@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Код нажатой клавиши</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="icon" type="image/png" href="./img/keyboard.png">
+        <script src="./jQ/jquery-3.5.1.js"></script>
+        <script src="./js/script.js"></script>
+</head>
+<body>
+    <h1 class="center">Для получения кода - нажмите клавишу</h1>
+    <div class="main"><p class="valueMain"></p></div>
+    <div class="wrap hide">
+        <div class="card">
+            <span class="name">event.Key :</span>          
+        <h3><p class="value1"></p></h3>
+        </div>
+        <!--  -->
+        <div class="card">
+            <span class="name">event.Which :</span>
+            <h3><p class="value2"></p></h3>
+        </div>
+        <!--  -->
+        <div class="card">
+            <span class="name">event.Code :</span>
+            <h3><p class="value3"></p></h3>
+        </div>
+    </div>
+    <span class="footer">Made based on the example of Wes Bos <a target="_blank" href="https://keycode.info/">keycode.info</a></span>
+</body>
+</html>
+

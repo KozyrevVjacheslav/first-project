@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 18px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 10% auto;
+    background: rgb(224, 223, 219);
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+button {
+    background: none;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: .9rem;
+}
+
+button:active {
+    background: #000;
+}
+
+.slider {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.slider-line {
+    height: 150px;
+    width: 750px;
+    background: orangered;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.btn {
+    text-align: center;
+}

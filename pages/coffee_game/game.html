@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+</head>
+
+<body>
+    <script>
+        var number = 4;
+        var userAnswer = '';
+        var attemptsLimit = 3;
+        var attempt = 0;
+
+        while (attempt < attemptsLimit) {
+            attempt++;
+            console.log(attempt);
+
+            userAnswer = prompt('Select Nuber: 1-5');
+
+            if (userAnswer == '' || userAnswer == null) {
+                document.write('Bye!');
+                break;
+            } else if (userAnswer == number) {
+                document.write(
+                    '<img src="./img/sal.jpg" width=500 alt="SALUT"><h3>You WON</h3>');
+                break;
+            } else if (attempt == 3) {
+                document.write('<img src="./img/smile.jpg" width=500 alt="SALUT"><h3>You have exhausted all lives</h3>');
+                break;
+            } else {
+                console.log('You lose');
+            };
+        }
+    </script>
+</body>
+
+</html>
